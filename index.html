@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Random Quote</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="background">
+            <div class="backdrop"></div>
+
+            <main class="quote-card" aria-live="polite">
+                <p id="quote" class="quote-text">Loading quote...</p>
+
+                <hr class="divider" />
+
+                <div class="card-footer">
+                    <span id="author" class="author-text"></span>
+
+                    <button
+                        id="diceBtn"
+                        class="dice-btn"
+                        type="button"
+                        aria-label="Get random quote"
+                    >
+                        <span class="dice">
+                            <span class="pip pip-1"></span>
+                            <span class="pip pip-2"></span>
+                            <span class="pip pip-3"></span>
+                            <span class="pip pip-4"></span>
+                            <span class="pip pip-5"></span>
+                        </span>
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
