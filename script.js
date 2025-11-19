@@ -7,14 +7,14 @@ async function fetchQuote() {
   authorEl.textContent = "";
 
   try {
-    const res = await fetch("https://api.quotable.io/random");
+    const res = await fetch("https://dummyjson.com/quotes/random");
     if (!res.ok) {
       throw new Error("Network response was not ok");
     }
 
     const data = await res.json();
-    quoteEl.textContent = data.content;
-    authorEl.textContent = data.author ? data.author : "Unknown";
+    quoteEl.textContent = data.quote;
+    authorEl.textContent = data.author;
   } catch (error) {
     quoteEl.textContent = "Could not load quote. Please try again.";
     authorEl.textContent = "";
